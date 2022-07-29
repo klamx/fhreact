@@ -1,10 +1,9 @@
-export default function FirstApp () {
-  const newMessage = 'Alejandro!!!'
-
+export default function FirstApp({ title, subtitle }) {
+  // const newMessage = 'Alejandro!!!'
   return (
     <>
-      <h1>{newMessage}</h1>
-      <p>Soy un subtitulo</p>
+      <h1>{title}</h1>
+      <p>{subtitle}</p>
     </>
   )
 }

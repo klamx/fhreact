@@ -8,6 +8,6 @@ const root = document.getElementById('root')
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
     {/* <App /> */}
-    <FirstApp />
+    <FirstApp title="Hola qué pasa ps" subtitle="no pasa es nada"/>
   </React.StrictMode>
 )
