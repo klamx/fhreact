@@ -4,14 +4,14 @@ import AddCategory from './components/AddCategory'
 function GifExpertApp () {
   const [categories, setCategories] = useState(['One Punch', 'Dragon Ball'])
 
-  const onAddCategory = () => {
-    setCategories([...categories, 'Valorant'])
+  const onAddCategory = (newCategory) => {
+    setCategories([...categories, newCategory])
   }
 
   return (
     <>
       <h1>GiftExpertApp</h1>
-      <AddCategory setCategories={setCategories} />
+      <AddCategory onNewCategory={(value) => onAddCategory(value)} />
       <ol>
         {categories.map(cat => {
           return (
