@@ -8,7 +8,7 @@ function GifExpertApp () {
   const onAddCategory = (newCategory) => {
     const filteredCats = categories.find((cat) => cat === newCategory)
     if (filteredCats === newCategory) return
-    setCategories([...categories, newCategory])
+    setCategories([newCategory, ...categories])
   }
 
   return (
