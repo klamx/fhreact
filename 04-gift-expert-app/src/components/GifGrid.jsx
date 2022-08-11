@@ -1,14 +1,17 @@
-import { useEffect, useState } from 'react'
-import getGifts from '../../helpers/getGifs'
+// import { useEffect, useState } from 'react'
+// import getGifts from '../../helpers/getGifs'
+import UseFetchGifts from '../hooks/useFetchGifts'
 import GifGridItem from './GifGridItem'
 
 function GifGrid ({ category }) {
-  useEffect(() => {
-    getGifts(category)
-      .then(newImages => setImages(newImages))
-  }, [])
+  // useEffect(() => {
+  //   getGifts(category)
+  //     .then(newImages => setImages(newImages))
+  // }, [])
 
-  const [images, setImages] = useState([])
+  // const [images, setImages] = useState([])
+
+  const { images, isLoading } = UseFetchGifts(category)
 
   return (
     <div>
