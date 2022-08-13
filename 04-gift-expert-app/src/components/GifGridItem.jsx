@@ -9,4 +9,4 @@ function GifGridItem ({ title, url }) {
   )
 }
 
-export default GifGridItem
+export { GifGridItem }
