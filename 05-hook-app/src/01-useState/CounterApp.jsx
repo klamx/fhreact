@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-function CounterApp() {
+function CounterApp () {
   const [counter, setCounter] = useState({
     counter1: 10,
     counter2: 20,
-    counter3: 30,
+    counter3: 30
   })
 
-  const {counter1, counter2, counter3} = counter
+  const { counter1, counter2, counter3 } = counter
 
   return (
     <>
@@ -17,7 +17,7 @@ function CounterApp() {
       <hr />
       <button
         className='btn btn-primary'
-        onClick={() => setCounter({...counter, counter1: counter1 + 1})}
+        onClick={() => setCounter({ ...counter, counter1: counter1 + 1 })}
       >
         +1
       </button>
